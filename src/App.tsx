@@ -1,9 +1,12 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+
+import store from './store';
 
 const App: React.FC = () => (
-  <div>
+  <Provider store={store}>
     <h1>Teste</h1>
-  </div>
+  </Provider>
 );
 
 export default App;
