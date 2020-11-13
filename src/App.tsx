@@ -3,9 +3,11 @@ import { Provider } from 'react-redux';
 
 import store from './store';
 
+import Catalog from './components/Catalog';
+
 const App: React.FC = () => (
   <Provider store={store}>
-    <h1>Teste</h1>
+    <Catalog />
   </Provider>
 );
 
